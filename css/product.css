@@ -1,0 +1,61 @@
+*{
+ font-family: "Playfair Display", serif;
+}
+.item__detail{
+    margin-top: 360px;
+    z-index: 10;
+}
+
+#ex1
+{
+    padding: 0;
+}
+.zoom:after {
+    content:'';
+    display:block; 
+    width:33px; 
+    height:33px; 
+    position:absolute; 
+    top:0;
+    right:0px;
+    background:url(../images/icon.png);
+}
+.item__policy{
+    background-color: rgba(128, 128, 128, 0.3);
+    padding: 5px;
+    border: dotted 1px gray;
+}
+.item__policy p{
+    font-size: 12px;
+}
+
+#quantity{
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+    padding-bottom: 7px;
+    font-size: 16px;
+    position: relative;
+}
+.btn{
+    padding: 8px!important;
+}
+.quantity-left-minus{
+    padding: 25px;
+    position: absolute;
+    left: 20px;
+}
+.quantity-right-plus{
+    position: absolute;
+    right: 45px;
+}
+.badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+  }
+  .my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+  }

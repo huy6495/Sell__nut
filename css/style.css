@@ -1,0 +1,141 @@
+* {
+  font-family: "Playfair Display", serif;
+}
+header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#myCarousel {
+  position: relative;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 0%;
+}
+.carousel-indicators li {
+  max-width: 20px;
+  height: 20px;
+  margin: 0 4px;
+  background-color: #79b144dc;
+  bottom: -10px;
+}
+.carousel-indicators .active {
+  max-width: 20px;
+  height: 20px;
+  margin: 0 4px;
+  background-color: #78b144;
+  bottom: -10px;
+}
+.scroll__down {
+  position: absolute;
+  bottom: 0px;
+  left: 3px;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+  position: absolute;
+  top: 55%;
+}
+.carousel__txt {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+.carousel__txt .txt__mota {
+  height: 112px;
+  background-image: url(../images/bg_cap3.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: baseline;
+}
+.carousel__txt .txt__mota p {
+  margin: 0 65px;
+  margin-top: 35px;
+}
+
+.sell__item {
+  border: solid 0.5px rgba(128, 128, 128, 0.432);
+  border-radius: 6%;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s;
+  height: 380px;
+}
+.sell__item__overlay {
+  background-color: rgba(128, 128, 128, 0.4);
+  padding: 3px 0;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+.sell__item__overlay a .buy__now {
+  height: 32px;
+  width: 32px;
+  line-height: 30px;
+  border: solid 1px #78b144;
+  color: #78b144;
+  border-radius: 50%;
+  margin: 0 7px;
+  transition: all 0.5s;
+}
+.sell__item:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+}
+.sell__item:hover .sell__item__overlay {
+  opacity: 1;
+}
+.sell__item .price__up {
+  font-size: 20px;
+  font-style: italic;
+  transition: all 0.5s;
+}
+.sell__item:hover .price__up {
+  transform: translateY(-15px);
+}
+.sell__item .sell__item__overlay a .buy__now:hover {
+  background-color: #78b144;
+  color: white;
+}
+.slick-prev {
+  position: absolute;
+  left: 5%;
+  background: black;
+  padding-bottom: 21px;
+}
+.slick-next {
+  position: absolute;
+  right: -5.5%;
+  background: black;
+  padding-bottom: 21px;
+}
+.slick-prev:hover {
+  background: red;
+}
+
+/* Our blog */
+.our__blog {
+  height: 600px;
+  width: 100%;
+  background-color: #5fb485;
+  margin-top: 100px;
+  position: relative;
+  padding: 0%;
+}
+.our__blog > img {
+  position: absolute;
+  top: -25px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
